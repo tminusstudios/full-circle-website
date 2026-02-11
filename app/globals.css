@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Industrial Minimalist Design System */
+:root {
+  /* Navy backgrounds (keeping current scheme) */
+  --color-navy-950: #0A0F1C;
+  --color-navy-900: #0D1423;
+  --color-navy-800: #13192D;
+
+  /* Industrial steel */
+  --color-steel-900: #1A1F2E;
+  --color-steel-800: #252B3D;
+  --color-steel-700: #2F3749;
+  --color-steel-600: #3D4556;
+
+  /* Brand blue accent (keeping current scheme) */
+  --color-brand-400: #5CB3FF;
+  --color-brand-500: #3B9FFF;
+  --color-brand-600: #2E8AE6;
+
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-cream: #F5F3ED;
+  --color-charcoal: #2B2B2B;
+
+  /* Spacing */
+  --section-padding-desktop: 7.5rem;
+  --section-padding-mobile: 5rem;
+  --container-max-width: 1200px;
+}
+
+/* Base Reset & Typography - Industrial Minimalist */
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply font-sans text-body text-white bg-navy-950 antialiased;
+  }
+
+  /* Headings - Ultra Bold, Uppercase, Wide Tracking */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans uppercase font-black;
+  }
+
+  h1 {
+    @apply text-h1 tracking-normal;
+  }
+
+  h2 {
+    @apply text-h2 tracking-tight;
+  }
+
+  h3 {
+    @apply text-h3 tracking-tight;
+  }
+
+  h4 {
+    @apply text-h4 tracking-wide;
+  }
+
+  /* Links - Flat, no underline */
+  a {
+    @apply transition-opacity duration-200;
+  }
+
+  a:hover {
+    @apply opacity-70;
+  }
+
+  /* Focus States (Accessibility) */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-navy-950;
+  }
+
+  /* Zero border-radius globally */
+  button,
+  input,
+  select,
+  textarea,
+  img {
+    @apply rounded-none;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  /* Section Spacing */
+  .section-padding {
+    @apply py-section-mobile md:py-section;
+  }
+
+  /* Container - Max 1200px */
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-6 lg:px-8;
+  }
+
+  /* Image Overlay (Dark) - Flat, no gradient */
+  .image-overlay {
+    @apply relative;
+  }
+
+  .image-overlay::after {
+    content: '';
+    @apply absolute inset-0 bg-black opacity-40 pointer-events-none;
+  }
+
+  /* Text Shadow - Minimal */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Ultra Wide Tracking */
+  .tracking-ultra {
+    letter-spacing: 0.25em;
+  }
+}
+
+/* Component Patterns - Industrial Minimalist */
+@layer components {
+  /* Button Base Styles - Flat, Zero Radius, Bold */
+  .btn {
+    @apply inline-block px-8 py-4 uppercase font-bold text-button tracking-wider transition-all duration-200;
+    @apply border-2 rounded-none;
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-navy-950;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-500 border-brand-500 text-white;
+  }
+
+  .btn-primary:hover {
+    @apply bg-transparent text-brand-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent border-brand-500 text-brand-500;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-brand-500 text-white;
+  }
+
+  /* Card Styles - Flat, No Shadow, Border Only */
+  .card {
+    @apply bg-steel-900 border border-gray-200 transition-all duration-200;
+  }
+
+  .card:hover {
+    @apply border-brand-500;
+  }
+
+  /* Section Divider - 1px solid */
+  .section-divider {
+    @apply border-t border-gray-200;
+  }
+}
+
+/* ===== HERO ANIMATIONS ===== */
+
+/* Subheadline highlight sweep — runs once on load */
+@keyframes highlight-sweep {
+  from { width: 0; }
+  to   { width: 110%; }
+}
+
+.hero-subheadline {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.hero-subheadline::after {
+  content: '';
+  position: absolute;
+  left: -5%;
+  top: 8%;
+  height: 84%;
+  width: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 159, 255, 0.14) 20%,
+    rgba(59, 159, 255, 0.26) 50%,
+    rgba(59, 159, 255, 0.14) 80%,
+    transparent 100%
+  );
+  z-index: -1;
+  animation: highlight-sweep 1.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+  pointer-events: none;
+}
+
+/* CTA glow pulse — repeats every 4s */
+@keyframes cta-glow-pulse {
+  0%, 60%, 100% { box-shadow: 0 4px 20px rgba(59, 159, 255, 0.35); }
+  30%            { box-shadow: 0 4px 44px rgba(59, 159, 255, 0.65), 0 0 0 7px rgba(59, 159, 255, 0.08); }
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 1.1rem 2.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #5CB3FF 0%, #3B9FFF 50%, #2D8AE0 100%);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  animation: cta-glow-pulse 4s ease-in-out 2.5s infinite;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  opacity: 1 !important;
+  transform: scale(1.05);
+  box-shadow: 0 8px 44px rgba(59, 159, 255, 0.7), 0 0 0 2px rgba(255, 255, 255, 0.12);
+  animation-play-state: paused;
+}
+
+/* Dark Overlay Utility for Images - Flat overlay */
+.dark-overlay {
+  position: relative;
+}
+
+.dark-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.dark-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Performance-focused animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
