@@ -64,7 +64,15 @@ export default function MassagePage() {
         <div className="relative z-10 section-padding">
           <Container>
             <div className="max-w-3xl">
-              <h1 className="text-h1 text-white mb-6">Massage Therapy</h1>
+              <h1 className="text-h1 text-white mb-4">Massage Therapy</h1>
+              <div className="mb-8">
+                <span
+                  className="hero-subheadline text-2xl md:text-3xl text-gray-200 font-normal"
+                  style={{ letterSpacing: "0.02em", lineHeight: 1.45 }}
+                >
+                  Heal. Restore. Feel Better.
+                </span>
+              </div>
               <p className="text-body-lg text-gray-300 leading-relaxed">
                 We offer Swedish, Neuromuscular Therapy (Deep Tissue), Myofascial Release, and Pregnancy Massage. It is recommended to book for a 90 or 120 minute session. This time frame allows for a thorough full body session while also giving attention to troublesome areas.
               </p>
