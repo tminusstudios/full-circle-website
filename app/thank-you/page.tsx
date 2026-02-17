@@ -36,12 +36,12 @@ export default function ThankYouPage() {
 
           {/* Heading */}
           <h1 className="text-h1 text-white mb-6">
-            You&apos;re In! 🎉
+            Thanks for Reaching Out! 🎉
           </h1>
 
           {/* Subtext */}
           <p className="text-body-lg text-gray-300 leading-relaxed mb-12">
-            Thank you for claiming your free session. We&apos;ll reach out to you shortly to get everything set up. Get ready to start your transformation!
+            We&apos;ve received your message and a member of our team will be in touch shortly. We look forward to helping you on your wellness journey!
           </p>
 
           {/* Divider */}
