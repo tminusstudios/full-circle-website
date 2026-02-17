@@ -8,7 +8,7 @@ export const contactInfo = {
   phone: "412-295-7058",
   email: "cody@fullcirclefunctionandfitness.com",
   address: "4361 William Flinn Highway, Allison Park, PA 15101",
-  hours: "Monday-Saturday by appointment, Sunday closed",
+  hours: "Monday - Friday: 6am - 8pm | By Appointment",
 };
 
 export const staffBios = [
@@ -23,9 +23,11 @@ export const staffBios = [
       { institution: "California University of Pennsylvania", credential: "Master of Science: Exercise Science and Health Promotion (Performance Enhancement/Injury Prevention, Rehabilitation Science)" },
       { institution: "Pittsburgh School of Massage Therapy", credential: "Licensed Massage Therapist (LMT)" },
       { institution: "NSCA", credential: "Certified Strength and Conditioning Specialist (CSCS)" },
-      { institution: "Pain-Free Performance Specialist Certification (PPSC)", credential: "Level 1, Level 2, Programming, Mobility" },
+      { institution: "Pain-Free Performance Specialist Certification (PPSC)", credential: "Level 1, Level 2, Programming, Mobility, Functional Kettlebell Training" },
       { institution: "NASM", credential: "Performance Enhancement Specialist (PES), Corrective Exercise Specialist (CES)" },
-      { institution: "Unaffiliated", credential: "Barbell Rehab Method Certification (BRM), Myofascial Release Massage Level 1 (Upper) & Level 2 (Lower)" },
+      { institution: "Unaffiliated", credential: "Barbell Rehab Method Certification (BRM)" },
+      { institution: "Myofascial Release", credential: "Myofascial Release Massage Level 1 & 2 with Howard Rontal; YogaBodyworkers Bliss Bodywork Myofascial 4-Day Program with Brian Campbell" },
+      { institution: "Anatomy Trains with Tom Myers", credential: "Technique Series: Anatomy Trains (Superficial Front, Superficial Back, Lateral, Spiral, Deep Front, Shoulder & Arm Lines), Fascial Tensegrity, Myofascial Meridians, The Functional Lines" },
     ],
     additionalCerts: [] as string[],
     imageUrl: "/images/team/Cody Bock Personal Trainer.avif",
@@ -45,6 +47,7 @@ export const staffBios = [
       { institution: "Forrest Yoga", credential: "200HR Certification with Ana Forrest" },
       { institution: "Prajna Yoga", credential: "200HR Certification with Tias Little" },
       { institution: "Yoga Bodyworkers", credential: "5 Day Immersion with Jambo Truong and Brian Campbell" },
+      { institution: "Pregnancy Massage", credential: "Pregnancy Massage with Kari Frank; Pregnancy & Massage with Susan Salvo" },
     ],
     additionalCerts: [] as string[],
     imageUrl: "/images/team/Becca Cutright Personal Trainer.jpg.avif",
@@ -59,7 +62,7 @@ export const staffBios = [
     credentials: [
       { institution: "Indiana University of Pennsylvania", credential: "M.S. Exercise Science/Sport Management" },
       { institution: "NSCA", credential: "Certified Strength and Conditioning Specialist (CSCS)" },
-      { institution: "Pain Free Performance Specialist (PPSC)", credential: "Level 1, Programming" },
+      { institution: "Pain Free Performance Specialist (PPSC)", credential: "Level 1, Programming, Functional Kettlebell Training" },
     ],
     additionalCerts: [] as string[],
     imageUrl: "/images/team/Chris Reeves Personal Trainer.jpg.avif",
@@ -75,6 +78,7 @@ export const staffBios = [
     credentials: [
       { institution: "Grove City College", credential: "B.S. in Exercise Science" },
       { institution: "NSCA", credential: "Certified Strength and Conditioning Specialist" },
+      { institution: "Pain Free Performance Specialist (PPSC)", credential: "Level 1" },
     ],
     additionalCerts: [] as string[],
     imageUrl: "/images/team/Elaine Miller Personal Trainer.jpg.avif",

@@ -14,33 +14,43 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: {
-    default: "Full Circle Function & Fitness | Pittsburgh Personal Training",
+    default:
+      "Full Circle Function & Fitness | Personal Training, Massage Therapy & Yoga in Allison Park, PA",
     template: "%s | Full Circle Function & Fitness",
   },
   description:
-    "Performance-driven personal training and massage therapy in Pittsburgh. Transform your fitness with expert coaching and structured programming.",
+    "Top-rated personal training, massage therapy, and private yoga in Allison Park & Pittsburgh's North Hills. 4.9 stars on Google with 75+ reviews. Get strong. Move well. Live better. Call 412-295-7058.",
   keywords: [
-    "Pittsburgh personal trainer",
-    "personal training Pittsburgh",
-    "fitness coaching",
-    "massage therapy",
-    "strength training",
+    "personal trainer Allison Park",
+    "personal trainer Pittsburgh",
+    "massage therapy Pittsburgh",
+    "massage therapy North Hills",
+    "private yoga Allison Park",
+    "personal trainer near me",
+    "massage therapy near me",
+    "yoga classes Pittsburgh",
+    "strength training Allison Park",
+    "fitness North Hills PA",
+    "personal trainer Shaler",
+    "personal trainer Hampton PA",
+    "massage therapist Allison Park PA",
   ],
   authors: [{ name: "Full Circle Function & Fitness" }],
   creator: "Full Circle Function & Fitness",
   publisher: "Full Circle Function & Fitness",
   metadataBase: new URL("https://www.fullcirclefunctionandfitness.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://fullcirclefunctionandfitness.com",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.fullcirclefunctionandfitness.com",
     siteName: "Full Circle Function & Fitness",
-    title: "Full Circle Function & Fitness | Pittsburgh Personal Training",
+    title:
+      "Full Circle Function & Fitness | Personal Training, Massage Therapy & Yoga in Allison Park, PA",
     description:
-      "Performance-driven personal training and massage therapy in Pittsburgh.",
+      "Top-rated personal training, massage therapy, and private yoga in Allison Park & Pittsburgh's North Hills. 4.9 stars on Google with 75+ reviews. Get strong. Move well. Live better. Call 412-295-7058.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -52,9 +62,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Full Circle Function & Fitness | Pittsburgh Personal Training",
+    title:
+      "Full Circle Function & Fitness | Personal Training, Massage Therapy & Yoga in Allison Park, PA",
     description:
-      "Performance-driven personal training and massage therapy in Pittsburgh.",
+      "Top-rated personal training, massage therapy, and private yoga in Allison Park & Pittsburgh's North Hills. 4.9 stars on Google with 75+ reviews. Get strong. Move well. Live better. Call 412-295-7058.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -67,6 +78,12 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  other: {
+    "geo.region": "US-PA",
+    "geo.placename": "Allison Park",
+    "geo.position": "40.5794;-79.9531",
+    ICBM: "40.5794, -79.9531",
   },
   verification: {
     // Add Google Search Console verification code here

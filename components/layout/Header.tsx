@@ -11,10 +11,8 @@ export default function Header() {
     { name: 'ABOUT', href: '/about' },
     { name: 'PERSONAL TRAINING', href: '/training' },
     { name: 'MASSAGE THERAPY', href: '/massage' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'YOGA', href: '/yoga' },
   ];
-
-  const ctaNav = { name: 'CLAIM FREE PASS', href: '/free-pass' };
 
   return (
     <header className="bg-navy-950 border-b border-steel-700 sticky top-0 z-50">
@@ -46,10 +44,10 @@ export default function Header() {
               </a>
             ))}
             <a
-              href={ctaNav.href}
+              href="/contact"
               className="ml-3 text-xs font-bold uppercase tracking-wider text-white bg-brand-500 px-5 py-2.5 hover:bg-brand-600 transition-colors whitespace-nowrap"
             >
-              {ctaNav.name}
+              CONTACT
             </a>
           </div>
 
@@ -93,11 +91,11 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href={ctaNav.href}
+                href="/contact"
                 className="text-sm font-bold uppercase tracking-wider text-white bg-brand-500 px-4 py-3 text-center hover:bg-brand-600 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {ctaNav.name}
+                CONTACT
               </a>
             </div>
           </div>

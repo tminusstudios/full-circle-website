@@ -3,7 +3,7 @@
 export const trainingContent = {
   title: "PERSONAL TRAINING",
   description:
-    "Our clients come from various lifestyle backgrounds with a common goal in mind — living better.",
+    "Our clients come from various lifestyle backgrounds with a common goal in mind, to feel better. With your goals and ability level in mind, we are able to personalize every session to fit your exact needs. Our goal for each client is to build strength and increase movement competency all while keeping you pain and injury free. Combining your goals with our company's vision will ensure you start living your best life!",
   sections: [
     {
       heading: "OUR APPROACH",

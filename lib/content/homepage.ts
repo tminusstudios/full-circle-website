@@ -1,50 +1,51 @@
 // Homepage Content
 
 export const heroContent = {
-  headline: "PRIVATE PERSONAL TRAINING",
-  subheadline: "Start Changing Your Life in Six Weeks",
+  headline: "Personal Training, Massage Therapy & Yoga in Pittsburgh",
+  subheadline: "Get Strong. Move Well. Live Better.",
   subtext: "",
-  ctaText: "CLAIM FREE SESSION",
+  ctaText: "BOOK A FREE CONSULTATION",
   ctaHref: "/contact",
   // backgroundImage will be added after extracting from Wix
 };
 
 export const servicesContent = [
   {
-    title: "PAIN MANAGEMENT",
-    description: "Specialized approach to managing and reducing chronic pain through targeted training.",
-    imageUrl: "", // To be added after content extraction
+    title: "PRIVATE PERSONAL TRAINING",
+    description: "One on One Personal Training - Strength training with your personal goals and ability levels in mind.",
+    imageUrl: "",
     href: "/training",
   },
   {
-    title: "PERFORMANCE MOVEMENT TRAINING",
-    description: "Enhance your athletic performance with structured movement training programs.",
-    imageUrl: "", // To be added after content extraction
+    title: "SEMI-PRIVATE PERSONAL TRAINING",
+    description: "Personal training focused on building strength and maintaining muscle mass.",
+    imageUrl: "",
     href: "/training",
   },
   {
     title: "MASSAGE THERAPY",
-    description: "Professional massage therapy to support recovery, reduce pain, and enhance performance.",
-    imageUrl: "", // To be added after content extraction
+    description: "Maintain your overall well being through pain and stress management, recovery support, and increased body awareness.",
+    imageUrl: "",
     href: "/massage",
   },
   {
-    title: "PERSONAL TRAINING PAIN MANAGEMENT",
-    description: "One-on-one training focused on pain management and functional improvement.",
-    imageUrl: "", // To be added after content extraction
-    href: "/training",
+    title: "YOGA",
+    description: "One-on-one personalized yoga sessions to focus on the mind-body connection and the easing of life's pains and stresses.",
+    imageUrl: "",
+    href: "/yoga",
   },
 ];
 
 export const optimalFunctionContent = {
-  headline: "ACHIEVE OPTIMAL FUNCTION",
-  description: "Our clients come from various lifestyle backgrounds with a common goal in mind, to keep progressing. Following a thorough fitness and movement assessment, we are able to personalize every session to fit your exact needs. Through strength training, corrective exercise, and massage therapy, your goals will be met!",
+  headline: "GET STRONG. MOVE WELL. LIVE BETTER.",
+  description: "Our clients come from various lifestyle backgrounds with a common goal in mind, to feel better. With your goals and ability level in mind, we are able to personalize every session to fit your exact needs. Through strength training, corrective exercise, and massage therapy, your goals will be met!",
   goalsHeading: "COMMON CLIENT GOALS",
   goals: [
     "Gain Strength",
-    "Prevent Injuries",
-    "Improve Athletic Performance",
-    "Restore Pain-Free Living",
+    "Build and Maintain Muscle",
+    "Build Confidence",
+    "Reduce Chronic Pain",
+    "Healthy Lifestyle Habits",
   ],
 };
 
@@ -94,7 +95,7 @@ export const affiliates = [
 export const faqs = [
   {
     question: "What does a personal trainer do?",
-    answer: "A personal trainers goal is to help you get stronger, move better, and live better. While there are numerous benefits, the biggest one is that you are exercising under the supervision of a trained and educated professional. This mitigates the risk of injury and increases the likely hood of success. People often get hurt when they start new exercise programs on their own so having guidance is KEY.",
+    answer: "A personal trainer's goal is to help you get stronger, move better, and live better. While there are numerous benefits, the biggest one is that you are exercising under the supervision of a trained and educated professional. This mitigates the risk of injury and increases the likelihood of success. People often get hurt when they start new exercise programs on their own. Having guidance is KEY.",
   },
   {
     question: "What is the difference between a personal trainer and a physical therapist?",
@@ -102,7 +103,7 @@ export const faqs = [
   },
   {
     question: "How much does personal training cost?",
-    answer: "Our services start at just 74 dollars per session for individuals and just 109 dollars per session for partners.",
+    answer: "Our services start at just $52 per session for semi-private and $69 per session for individuals.",
   },
   {
     question: "Why is personal training so expensive?",
@@ -114,7 +115,7 @@ export const faqs = [
   },
   {
     question: "I don't want to get hurt or have pain – don't people get hurt lifting weights?",
-    answer: "Yes, people do get hurt lifting weights. However, strength training is a requirement in life; therefore, it is of utmost importance to hire a professional. One of the biggest goals of our staff is to keep you pain-free (and help you get out of pain if you already have it!)",
+    answer: "Yes, people do get hurt lifting weights. However, strength training is a requirement in life and prevents us from getting hurt, if done properly; therefore, it is of utmost importance to hire a professional. One of the biggest goals of our staff is to keep you pain-free (and help you get out of pain if you already have it!)",
   },
   {
     question: "What should my exercise frequency be to notice a difference?",
@@ -122,7 +123,7 @@ export const faqs = [
   },
   {
     question: "What is included in my personal training session?",
-    answer: "60 minute one on one training. Personalized programming to ensure you reach your goals. Drink (Coffee, water, sports drink). Snack. Choice of music. Home exercises to deal with nagging pain or injuries that might be present. Bonus for recurring clients: Great conversation with people down to talk about just about anything!",
+    answer: "60 minute personalized training. Personalized programming to ensure you reach your goals. Home exercises to deal with nagging pain or injuries that might be present. Bonus for recurring clients: Great conversation with people down to talk about almost anything!",
   },
   {
     question: "How long do people usually work with a personal trainer?",
@@ -146,7 +147,7 @@ export const faqs = [
   },
   {
     question: "Do I need to have an exercise base before starting to work with you?",
-    answer: "Not at all! All skill levels are welcome (beginners have the lucky skill of not having bad habits developed!)",
+    answer: "Not at all! All skill levels are welcome (beginners are in the lucky position of not having developed bad habits!)",
   },
   {
     question: "What type of workouts are my sessions focused on?",

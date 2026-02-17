@@ -25,7 +25,7 @@ export default function Footer() {
                 Full Circle Function & Fitness
               </h3>
               <p className="text-gray-400 text-sm">
-                Performance-driven training in Pittsburgh
+                Personal Training, Massage Therapy & Yoga in Pittsburgh
               </p>
             </div>
 
@@ -64,6 +64,7 @@ export default function Footer() {
                     cody@fullcirclefunctionandfitness.com
                   </a>
                 </li>
+                <li>4361 William Flinn Hwy</li>
                 <li>Allison Park, PA 15101</li>
               </ul>
             </div>

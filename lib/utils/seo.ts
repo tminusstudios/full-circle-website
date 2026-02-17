@@ -3,28 +3,39 @@
 export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://www.fullcirclefunctionandfitness.com',
+    '@type': 'HealthAndBeautyBusiness',
     name: 'Full Circle Function & Fitness',
-    description: 'Performance-driven personal training and massage therapy in Pittsburgh',
-    url: 'https://www.fullcirclefunctionandfitness.com',
-    telephone: '', // To be added
-    email: 'info@fullcirclefunctionandfitness.com',
+    url: 'https://fullcirclefunctionandfitness.com',
+    telephone: '+1-412-295-7058',
+    email: 'cody@fullcirclefunctionandfitness.com',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Pittsburgh',
+      streetAddress: '4361 William Flinn Hwy',
+      addressLocality: 'Allison Park',
       addressRegion: 'PA',
+      postalCode: '15101',
       addressCountry: 'US',
-      // streetAddress to be added after content extraction
     },
     geo: {
       '@type': 'GeoCoordinates',
-      // latitude and longitude to be added
+      latitude: 40.5794133,
+      longitude: -79.9531398,
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '75',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '06:00',
+      closes: '20:00',
     },
     priceRange: '$$',
-    image: 'https://www.fullcirclefunctionandfitness.com/images/og-image.jpg',
     sameAs: [
-      // Social media URLs to be added
+      'https://www.facebook.com/Full-Circle-Function-Fitness-109803007519493',
+      'https://www.instagram.com/fullcirclefunctionandfitness/',
     ],
   };
 }
