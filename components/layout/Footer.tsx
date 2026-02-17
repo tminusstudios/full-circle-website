@@ -64,7 +64,7 @@ export default function Footer() {
                     cody@fullcirclefunctionandfitness.com
                   </a>
                 </li>
-                <li>4361 William Flinn Hwy</li>
+                <li>4361 William Flinn Highway</li>
                 <li>Allison Park, PA 15101</li>
               </ul>
             </div>

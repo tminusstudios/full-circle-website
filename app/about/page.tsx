@@ -15,11 +15,14 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero + Intro */}
-      <section className="section-padding bg-navy-950">
+      <section className="pb-12 pt-20 md:pt-24 bg-navy-950">
         <Container>
-          <h1 className="text-h1 text-white text-center mb-10">ABOUT FULL CIRCLE FUNCTION &amp; FITNESS</h1>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-body-lg text-gray-300 leading-relaxed text-center">
+          <div className="text-center mb-10">
+            <h1 className="text-h1 text-white mb-3">ABOUT US</h1>
+            <p className="text-lg md:text-xl font-light tracking-wide text-brand-500">Full Circle Function &amp; Fitness</p>
+          </div>
+          <div className="max-w-[700px] mx-auto">
+            <p className="text-body-lg text-gray-300 leading-relaxed">
               {aboutIntro.text}
             </p>
           </div>
