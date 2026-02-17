@@ -150,12 +150,12 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <div
               className="bg-navy-800 border border-gray-200/20 rounded-lg overflow-hidden"
-              style={{ minHeight: "600px" }}
+              style={{ minHeight: "916px" }}
             >
               <iframe
-                src="https://link.localbestgyms.com/widget/form/tQRF83bdOCaHAx6qetRg"
-                style={{ width: "100%", height: "100%", border: "none", borderRadius: "4px", minHeight: "600px" }}
-                id="inline-tQRF83bdOCaHAx6qetRg"
+                src="https://link.localbestgyms.com/widget/form/GUqiHvrhapd0vnhkgiiF"
+                style={{ width: "100%", height: "100%", border: "none", borderRadius: "4px" }}
+                id="inline-GUqiHvrhapd0vnhkgiiF"
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"
                 data-trigger-value=""
@@ -163,11 +163,11 @@ export default function Home() {
                 data-activation-value=""
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
-                data-form-name="Free Class Form - Claude - 2/10/26"
-                data-height="undefined"
-                data-layout-iframe-id="inline-tQRF83bdOCaHAx6qetRg"
-                data-form-id="tQRF83bdOCaHAx6qetRg"
-                title="Free Class Form - Claude - 2/10/26"
+                data-form-name="Free Class Form (live on new website)"
+                data-height="916"
+                data-layout-iframe-id="inline-GUqiHvrhapd0vnhkgiiF"
+                data-form-id="GUqiHvrhapd0vnhkgiiF"
+                title="Free Class Form (live on new website)"
               ></iframe>
             </div>
           </div>

@@ -27,7 +27,7 @@ export default function ContactPage() {
           <div className="max-w-2xl mx-auto">
             <div
               className="bg-navy-800 border border-gray-200/20 rounded-lg overflow-hidden"
-              style={{ minHeight: "682px" }}
+              style={{ minHeight: "916px" }}
             >
               <iframe
                 src="https://link.localbestgyms.com/widget/form/GUqiHvrhapd0vnhkgiiF"
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
                 data-form-name="Free Class Form (live on new website)"
-                data-height="682"
+                data-height="916"
                 data-layout-iframe-id="inline-GUqiHvrhapd0vnhkgiiF"
                 data-form-id="GUqiHvrhapd0vnhkgiiF"
                 title="Free Class Form (live on new website)"
