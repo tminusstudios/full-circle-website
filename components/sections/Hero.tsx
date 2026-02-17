@@ -83,13 +83,6 @@ export default function Hero({
           </div>
         )}
 
-        {/* Trust line */}
-        {subheadline && (
-          <p className="mt-4 text-xs text-gray-500 uppercase tracking-widest font-medium">
-            Serving Pittsburgh&apos;s North Hills Since 2020 &middot; Join 100+ Happy Clients
-          </p>
-        )}
-
         {/* Fallback subtext (no highlight) */}
         {subtext && !subheadline && (
           <p className="mt-8 text-body-lg text-gray-200 max-w-2xl mx-auto">
@@ -135,6 +128,13 @@ export default function Hero({
               {ctaText}
             </a>
           </div>
+        )}
+
+        {/* Trust line */}
+        {subheadline && (
+          <p className="mt-4 text-xs text-gray-500 uppercase tracking-widest font-medium">
+            Serving Pittsburgh&apos;s North Hills Since 2020 &middot; Join 100+ Happy Clients
+          </p>
         )}
       </Container>
 
