@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'PERSONAL TRAINING', href: '/personal-training' },
     { name: 'MASSAGE THERAPY', href: '/massage-therapy' },
     { name: 'YOGA', href: '/yoga' },
+    { name: 'THORNE SUPPLEMENTS', href: 'https://www.thorne.com/u/PR1155737', external: true },
   ];
 
   return (
@@ -37,6 +38,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
+                {...('external' in item && item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="text-xs font-bold uppercase tracking-wider text-white hover:text-brand-500 transition-colors relative group"
               >
                 {item.name}
@@ -84,6 +86,7 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
+                  {...('external' in item && item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   className="text-sm font-bold uppercase tracking-wider text-white hover:text-brand-500 transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >

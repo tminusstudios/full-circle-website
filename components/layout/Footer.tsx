@@ -9,6 +9,8 @@ export default function Footer() {
       { name: 'ABOUT', href: '/about' },
       { name: 'TRAINING', href: '/personal-training' },
       { name: 'MASSAGE', href: '/massage-therapy' },
+      { name: 'YOGA', href: '/yoga' },
+      { name: 'THORNE SUPPLEMENTS', href: 'https://www.thorne.com/u/PR1155737', external: true },
       { name: 'CONTACT', href: '/contact' },
     ],
   };
@@ -39,6 +41,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <a
                       href={item.href}
+                      {...('external' in item && item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       className="text-gray-400 hover:text-brand-500 text-sm transition-colors"
                     >
                       {item.name}
