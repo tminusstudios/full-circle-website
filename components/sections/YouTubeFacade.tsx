@@ -17,6 +17,8 @@ export default function YouTubeFacade() {
               <img
                 src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                 alt="Full Circle Function & Fitness promo video"
+                width={1280}
+                height={720}
                 loading="lazy"
                 className="w-full h-full object-cover"
               />

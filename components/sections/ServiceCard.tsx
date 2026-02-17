@@ -21,6 +21,8 @@ export default function ServiceCard({
           <img
             src={imageUrl}
             alt={title}
+            width={640}
+            height={360}
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-none"
           />

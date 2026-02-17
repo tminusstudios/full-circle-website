@@ -162,10 +162,10 @@
 
 /* ===== HERO ANIMATIONS ===== */
 
-/* Subheadline highlight sweep — runs once on load */
+/* Subheadline highlight sweep — runs once on load (GPU composited) */
 @keyframes highlight-sweep {
-  from { width: 0; }
-  to   { width: 110%; }
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
 .hero-subheadline {
@@ -180,7 +180,7 @@
   left: -5%;
   top: 8%;
   height: 84%;
-  width: 0;
+  width: 110%;
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -190,18 +190,22 @@
     transparent 100%
   );
   z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
   animation: highlight-sweep 1.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+  will-change: transform;
   pointer-events: none;
 }
 
-/* CTA glow pulse — repeats every 4s */
+/* CTA glow pulse — repeats every 4s (GPU composited via opacity on pseudo) */
 @keyframes cta-glow-pulse {
-  0%, 60%, 100% { box-shadow: 0 4px 20px rgba(59, 159, 255, 0.35); }
-  30%            { box-shadow: 0 4px 44px rgba(59, 159, 255, 0.65), 0 0 0 7px rgba(59, 159, 255, 0.08); }
+  0%, 60%, 100% { opacity: 0.5; }
+  30%            { opacity: 1; }
 }
 
 .hero-cta {
   display: inline-block;
+  position: relative;
   padding: 1.1rem 2.75rem;
   font-size: 0.9rem;
   font-weight: 700;
@@ -211,15 +215,29 @@
   text-decoration: none;
   background: linear-gradient(135deg, #5CB3FF 0%, #3B9FFF 50%, #2D8AE0 100%);
   border: none;
+  box-shadow: 0 4px 20px rgba(59, 159, 255, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-  animation: cta-glow-pulse 4s ease-in-out 2.5s infinite;
   cursor: pointer;
+}
+
+.hero-cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 44px rgba(59, 159, 255, 0.65), 0 0 0 7px rgba(59, 159, 255, 0.08);
+  opacity: 0;
+  animation: cta-glow-pulse 4s ease-in-out 2.5s infinite;
+  will-change: opacity;
+  pointer-events: none;
 }
 
 .hero-cta:hover {
   opacity: 1 !important;
   transform: scale(1.05);
   box-shadow: 0 8px 44px rgba(59, 159, 255, 0.7), 0 0 0 2px rgba(255, 255, 255, 0.12);
+}
+
+.hero-cta:hover::after {
   animation-play-state: paused;
 }
 

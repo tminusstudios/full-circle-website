@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Hero from "@/components/sections/Hero";
 import ServiceCard from "@/components/sections/ServiceCard";
 import Container from "@/components/layout/Container";
@@ -145,41 +144,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Claim Free Session Form */}
-      <section className="section-padding bg-navy-900">
-        <Container>
-          <h2 className="text-h2 text-white text-center mb-4">GET STARTED</h2>
-          <p className="text-body-lg text-gray-300 text-center max-w-2xl mx-auto mb-10">
-            Ready to begin your wellness journey? Get in touch to schedule a free consultation.
-          </p>
-          <div className="max-w-2xl mx-auto">
-            <div
-              className="bg-navy-800 border border-gray-200/20 rounded-lg overflow-hidden"
-              style={{ minHeight: "916px" }}
-            >
-              <iframe
-                src="https://link.localbestgyms.com/widget/form/GUqiHvrhapd0vnhkgiiF"
-                style={{ width: "100%", height: "100%", border: "none", borderRadius: "4px" }}
-                id="inline-GUqiHvrhapd0vnhkgiiF"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Free Class Form (live on new website)"
-                data-height="916"
-                data-layout-iframe-id="inline-GUqiHvrhapd0vnhkgiiF"
-                data-form-id="GUqiHvrhapd0vnhkgiiF"
-                title="Free Class Form (live on new website)"
-              ></iframe>
-            </div>
-          </div>
-        </Container>
-      </section>
-      <Script src="https://link.localbestgyms.com/js/form_embed.js" strategy="lazyOnload" />
-
       {/* Affiliates Section */}
       <section className="section-padding bg-navy-950">
         <Container>
@@ -190,6 +154,8 @@ export default function Home() {
                 <img
                   src={affiliate.imageUrl}
                   alt={affiliate.alt}
+                  width={200}
+                  height={200}
                   loading="lazy"
                   className="max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
                 />
