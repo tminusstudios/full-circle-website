@@ -178,7 +178,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      <Script src="https://link.localbestgyms.com/js/form_embed.js" strategy="afterInteractive" />
+      <Script src="https://link.localbestgyms.com/js/form_embed.js" strategy="lazyOnload" />
 
       {/* Affiliates Section */}
       <section className="section-padding bg-navy-950">
@@ -190,6 +190,7 @@ export default function Home() {
                 <img
                   src={affiliate.imageUrl}
                   alt={affiliate.alt}
+                  loading="lazy"
                   className="max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
                 />
               </div>

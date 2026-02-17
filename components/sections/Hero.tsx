@@ -1,7 +1,9 @@
-'use client';
-
 import React from 'react';
+import Image from 'next/image';
 import Container from '../layout/Container';
+import ScrollButton from './ScrollButton';
+
+const BLUR_PLACEHOLDER = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAEAAQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDJoooqhH//2Q==";
 
 interface HeroProps {
   headline: string;
@@ -29,10 +31,15 @@ export default function Hero({
       <div className="absolute inset-0 z-0">
         {backgroundImage ? (
           <>
-            <img
+            <Image
               src={backgroundImage}
               alt="Full Circle Function & Fitness — Personal Training, Massage Therapy & Yoga in Pittsburgh"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+              placeholder="blur"
+              blurDataURL={BLUR_PLACEHOLDER}
             />
             <div className="absolute inset-0 bg-navy-950 opacity-60" />
           </>
@@ -133,15 +140,7 @@ export default function Hero({
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center z-10">
-        <button
-          onClick={() => window.scrollBy({ top: window.innerHeight * 0.85, behavior: 'smooth' })}
-          className="animate-bounce text-white/40 hover:text-white/70 transition-colors cursor-pointer"
-          aria-label="Scroll down"
-        >
-          <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
+        <ScrollButton />
       </div>
     </section>
   );

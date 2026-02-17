@@ -83,7 +83,7 @@ export default function ContactPage() {
           </div>
         </Container>
       </section>
-      <Script src="https://link.localbestgyms.com/js/form_embed.js" strategy="afterInteractive" />
+      <Script src="https://link.localbestgyms.com/js/form_embed.js" strategy="lazyOnload" />
 
       {/* Map */}
       <section className="bg-navy-950 py-10">
