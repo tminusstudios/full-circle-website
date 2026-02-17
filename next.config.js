@@ -10,7 +10,40 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Redirect duplicate/draft pages to main pages
+      // Old short paths → new routes
+      {
+        source: '/training',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      {
+        source: '/massage',
+        destination: '/massage-therapy',
+        permanent: true,
+      },
+      // Old Wix paths → new routes
+      {
+        source: '/private-yoga',
+        destination: '/yoga',
+        permanent: true,
+      },
+      // Old Wix booking/scheduling URLs → contact
+      {
+        source: '/book-online',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/schedule',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/booking',
+        destination: '/contact',
+        permanent: true,
+      },
+      // Old Wix duplicate/draft pages
       {
         source: '/about-7',
         destination: '/about',
@@ -26,7 +59,27 @@ const nextConfig = {
         destination: '/about',
         permanent: true,
       },
-      // Add more redirects as needed during content extraction phase
+      {
+        source: '/copy-of-personal-training',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-massage-therapy',
+        destination: '/massage-therapy',
+        permanent: true,
+      },
+      // Common Wix misc paths → homepage
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 };

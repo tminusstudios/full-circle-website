@@ -9,8 +9,8 @@ export default function Header() {
   const navigation = [
     { name: 'HOME', href: '/' },
     { name: 'ABOUT', href: '/about' },
-    { name: 'PERSONAL TRAINING', href: '/training' },
-    { name: 'MASSAGE THERAPY', href: '/massage' },
+    { name: 'PERSONAL TRAINING', href: '/personal-training' },
+    { name: 'MASSAGE THERAPY', href: '/massage-therapy' },
     { name: 'YOGA', href: '/yoga' },
   ];
 

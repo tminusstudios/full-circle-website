@@ -14,19 +14,19 @@ export const servicesContent = [
     title: "PRIVATE PERSONAL TRAINING",
     description: "One on One Personal Training - Strength training with your personal goals and ability levels in mind.",
     imageUrl: "",
-    href: "/training",
+    href: "/personal-training",
   },
   {
     title: "SEMI-PRIVATE PERSONAL TRAINING",
     description: "Personal training focused on building strength and maintaining muscle mass.",
     imageUrl: "",
-    href: "/training",
+    href: "/personal-training",
   },
   {
     title: "MASSAGE THERAPY",
     description: "Maintain your overall well being through pain and stress management, recovery support, and increased body awareness.",
     imageUrl: "",
-    href: "/massage",
+    href: "/massage-therapy",
   },
   {
     title: "YOGA",

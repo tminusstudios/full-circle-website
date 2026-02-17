@@ -7,8 +7,8 @@ export default function Footer() {
   const navigation = {
     main: [
       { name: 'ABOUT', href: '/about' },
-      { name: 'TRAINING', href: '/training' },
-      { name: 'MASSAGE', href: '/massage' },
+      { name: 'TRAINING', href: '/personal-training' },
+      { name: 'MASSAGE', href: '/massage-therapy' },
       { name: 'CONTACT', href: '/contact' },
     ],
   };

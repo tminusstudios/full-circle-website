@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Private and semi-private personal training starting at $52/session in Allison Park, PA. Customized strength training programs for all fitness levels. 4.9 stars on Google.",
   alternates: {
-    canonical: "https://fullcirclefunctionandfitness.com/training",
+    canonical: "https://fullcirclefunctionandfitness.com/personal-training",
   },
 };
 

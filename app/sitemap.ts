@@ -11,13 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/training`,
+      url: `${BASE_URL}/personal-training`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/massage`,
+      url: `${BASE_URL}/massage-therapy`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,

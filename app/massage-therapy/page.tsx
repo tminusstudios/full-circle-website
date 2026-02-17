@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Licensed massage therapy in Allison Park, PA. Swedish, neuromuscular, myofascial release, and pregnancy massage. 60, 90, and 120 minute sessions available.",
   alternates: {
-    canonical: "https://fullcirclefunctionandfitness.com/massage",
+    canonical: "https://fullcirclefunctionandfitness.com/massage-therapy",
   },
 };
 
