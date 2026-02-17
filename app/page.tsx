@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 import TestimonialsCarousel from "@/components/sections/TestimonialsCarousel";
 import YouTubeFacade from "@/components/sections/YouTubeFacade";
 import { heroContent, servicesContent, optimalFunctionContent, affiliates } from "@/lib/content/homepage";
-import { generateLocalBusinessSchema } from "@/lib/utils/seo";
+import { generateLocalBusinessSchema, generateOrganizationSchema } from "@/lib/utils/seo";
 
 export const metadata: Metadata = {
   title: "Personal Training, Massage Therapy & Yoga in Pittsburgh | Full Circle Function & Fitness",
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const localBusinessSchema = generateLocalBusinessSchema();
+  const organizationSchema = generateOrganizationSchema();
 
   return (
     <>
@@ -27,6 +28,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
       {/* Hero Section */}

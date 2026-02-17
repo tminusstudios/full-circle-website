@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Full Circle Function & Fitness",
+  description:
+    "The page you're looking for doesn't exist. Return to Full Circle Function & Fitness to explore our personal training, massage therapy, and yoga services in Pittsburgh.",
+};
 
 export default function NotFound() {
   return (

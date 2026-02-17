@@ -31,7 +31,7 @@ export default function Hero({
           <>
             <img
               src={backgroundImage}
-              alt=""
+              alt="Full Circle Function & Fitness — Personal Training, Massage Therapy & Yoga in Pittsburgh"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-navy-950 opacity-60" />

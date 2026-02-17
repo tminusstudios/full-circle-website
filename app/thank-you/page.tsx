@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Thank You",
   description: "Thank you for claiming your free session at Full Circle Function & Fitness.",
   alternates: {
-    canonical: "/thank-you",
+    canonical: "https://www.fullcirclefunctionandfitness.com/thank-you",
   },
 };
 
