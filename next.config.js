@@ -69,6 +69,42 @@ const nextConfig = {
         destination: '/massage-therapy',
         permanent: true,
       },
+      {
+        source: '/copy-of-types-of-massage-therapy',
+        destination: '/massage-therapy',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-do-you-help-with-nutrition-as',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-massage-after-care',
+        destination: '/massage-therapy',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-how-long-is-a-session',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-do-people-get-hurt-from-lifti',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      {
+        source: '/copy-of-exercise-frequency-to-notice',
+        destination: '/personal-training',
+        permanent: true,
+      },
+      // Catch-all for any remaining /copy-of-* Wix pages
+      {
+        source: '/copy-of-:slug*',
+        destination: '/',
+        permanent: true,
+      },
       // Common Wix misc paths → homepage
       {
         source: '/home',
