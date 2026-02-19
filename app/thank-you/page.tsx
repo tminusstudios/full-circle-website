@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Container from "@/components/layout/Container";
 
 export const metadata: Metadata = {
@@ -56,6 +57,9 @@ export default function ThankYouPage() {
           </a>
         </div>
       </Container>
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`gtag('event', 'conversion', {'send_to': 'AW-17943181260/v0vVCKzIv_sbEMzv_OtC'});`}
+      </Script>
     </div>
   );
 }
