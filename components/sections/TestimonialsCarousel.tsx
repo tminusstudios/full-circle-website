@@ -58,17 +58,12 @@ export default function TestimonialsCarousel() {
         <h2 className="text-h2 text-white">What Our Clients Say</h2>
       </div>
 
-      {/* Masonry grid */}
-      <div
-        style={{
-          columns: '3 280px',
-          columnGap: '1.5rem',
-        }}
-      >
+      {/* 3x3 Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {REVIEWS.map((review, i) => (
           <div
             key={i}
-            className="break-inside-avoid mb-6 bg-white rounded-xl p-6 shadow-[0_2px_16px_rgba(0,0,0,0.12)]"
+            className="bg-white rounded-xl p-6 shadow-[0_2px_16px_rgba(0,0,0,0.12)]"
           >
             {/* Stars + G icon */}
             <div className="flex items-center justify-between mb-3">
