@@ -110,6 +110,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto.variable}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Full Circle Function & Fitness",
+              "alternateName": "Full Circle Function and Fitness",
+              "url": "https://www.fullcirclefunctionandfitness.com"
+            }),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />

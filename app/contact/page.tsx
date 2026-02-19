@@ -4,7 +4,7 @@ import Container from "@/components/layout/Container";
 import { contactContent } from "@/lib/content/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Full Circle Function & Fitness | Allison Park, PA",
+  title: "Contact Us | Allison Park, PA",
   description:
     "Contact Full Circle Function & Fitness in Allison Park, PA. Call 412-295-7058 or email cody@fullcirclefunctionandfitness.com. Located at 4361 William Flinn Hwy.",
   alternates: {

@@ -9,7 +9,7 @@ import { heroContent, servicesContent, optimalFunctionContent, affiliates } from
 import { generateLocalBusinessSchema, generateOrganizationSchema } from "@/lib/utils/seo";
 
 export const metadata: Metadata = {
-  title: "Personal Training, Massage Therapy & Yoga in Pittsburgh | Full Circle Function & Fitness",
+  title: "Personal Training, Massage Therapy & Yoga in Pittsburgh",
   description:
     "Full Circle Function & Fitness offers personal training, massage therapy, and private yoga in Pittsburgh's North Hills. 4.9 stars on Google with 75+ reviews. Start changing your life today.",
   alternates: {
