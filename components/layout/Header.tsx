@@ -5,6 +5,7 @@ import Container from './Container';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(true);
 
   const navigation = [
     { name: 'HOME', href: '/' },
@@ -16,7 +17,38 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-navy-950 border-b border-steel-700 sticky top-0 z-50">
+    <header className="sticky top-0 z-50">
+      {/* Promo Banner */}
+      {bannerVisible && (
+        <div
+          className="relative px-4 py-2.5 md:py-3"
+          style={{ background: 'linear-gradient(135deg, #1E3A5F 0%, #2E75B6 100%)' }}
+        >
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 max-w-5xl mx-auto pr-6">
+            <p className="text-white text-[12px] md:text-[13px] font-medium text-center leading-snug">
+              We&apos;re Accepting 3 New Clients This Month — Your First Full Session Is Complimentary
+            </p>
+            <a
+              href="tel:4122957058"
+              className="inline-block text-white text-[12px] md:text-[13px] font-bold bg-white/15 hover:bg-white/25 transition-colors px-4 py-1.5 rounded-full border border-white/25 whitespace-nowrap w-full md:w-auto text-center"
+            >
+              Call 412-295-7058
+            </a>
+          </div>
+          <button
+            onClick={() => setBannerVisible(false)}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors p-1"
+            aria-label="Dismiss banner"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      )}
+
+      {/* Navigation */}
+      <div className="bg-navy-950 border-b border-steel-700">
       <Container>
         <nav className="flex items-center justify-between py-5">
 
@@ -104,6 +136,7 @@ export default function Header() {
           </div>
         )}
       </Container>
+      </div>
     </header>
   );
 }
