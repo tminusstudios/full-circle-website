@@ -61,6 +61,11 @@ export default function TrainingPage() {
               <p className="text-body-lg text-gray-300 leading-relaxed">
                 Our clients come from various lifestyle backgrounds with a common goal in mind; living better. Following a thorough fitness and movement assessment, we are able to personalize every session to fit your exact needs. Our goal for each client is to build strength and increase movement competency all while keeping you pain and injury free. Combining the goals you want to achieve with our company&apos;s vision will ensure you start living your best life!
               </p>
+              <div className="mt-10">
+                <a href="/contact" className="hero-cta">
+                  CLAIM YOUR COMPLIMENTARY SESSION
+                </a>
+              </div>
             </div>
           </Container>
         </div>
