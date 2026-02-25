@@ -89,7 +89,17 @@ export const affiliates = [
     imageUrl: "/images/affiliates/affiliate-4.avif",
     alt: "Affiliate Logo 4",
   },
-  // Add more affiliates as needed
+  {
+    name: "Thorne",
+    imageUrl: "/images/affiliates/thorne-logo.png",
+    alt: "Thorne Supplements Logo",
+    invert: true,
+  },
+  {
+    name: "LMNT",
+    imageUrl: "/images/affiliates/lmnt-logo.png",
+    alt: "LMNT Electrolytes Logo",
+  },
 ];
 
 export const faqs = [

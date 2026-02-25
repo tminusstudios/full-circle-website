@@ -148,7 +148,7 @@ export default function Home() {
       <section className="section-padding bg-navy-950">
         <Container>
           <h2 className="text-h2 text-center text-white mb-12">AFFILIATES</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center">
             {affiliates.map((affiliate, index) => (
               <div key={index} className="flex items-center justify-center p-4 bg-steel-900 aspect-square">
                 <img
@@ -157,7 +157,7 @@ export default function Home() {
                   width={200}
                   height={200}
                   loading="lazy"
-                  className="max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                  className={`max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300${'invert' in affiliate && affiliate.invert ? ' invert' : ''}`}
                 />
               </div>
             ))}
